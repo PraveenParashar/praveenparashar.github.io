@@ -4,7 +4,7 @@
   <id>https://praveenparashar.github.io/</id>
   <title>Praveen's Blogs</title>
   <subtitle>Let's do it ,Learn By doing. PraveenParasharBlogs</subtitle>
-  <updated>2021-08-10T20:38:25+05:30</updated>
+  <updated>2021-08-10T20:45:05+05:30</updated>
   <author>
     <name>Praveen Parashar</name>
     <uri>https://praveenparashar.github.io/</uri>
@@ -71,7 +71,7 @@ Step3: configure API Sec...
     <link href="https://praveenparashar.github.io/posts/how-to-add-post/" rel="alternate" type="text/html" title="How to add post with tag, category" />
     <published>2021-08-10T12:01:20+05:30</published>
   
-    <updated>2021-08-10T12:01:20+05:30</updated>
+    <updated>2021-08-10T20:39:08+05:30</updated>
   
     <id>https://praveenparashar.github.io/posts/how-to-add-post/</id>
     <content src="https://praveenparashar.github.io/posts/how-to-add-post/" />
@@ -107,7 +107,7 @@ https://jekyllrb.com/docs/posts/
     <link href="https://praveenparashar.github.io/posts/firstpost/" rel="alternate" type="text/html" title="The Basic Template" />
     <published>2021-08-10T11:45:20+05:30</published>
   
-    <updated>2021-08-10T11:45:20+05:30</updated>
+    <updated>2021-08-10T20:39:08+05:30</updated>
   
     <id>https://praveenparashar.github.io/posts/firstpost/</id>
     <content src="https://praveenparashar.github.io/posts/firstpost/" />

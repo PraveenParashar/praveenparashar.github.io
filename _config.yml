@@ -80,7 +80,7 @@ theme_mode:   # [light|dark]
 img_cdn: ''
 
 # the avatar on sidebar, support local or CORS resources
-avatar: https://learning2code.in/assets/img/avatar.jpeg
+avatar: https://learning2code.in/assets/avatar.jpeg
 
 # boolean type, the global switch for ToC in posts.
 toc: true
