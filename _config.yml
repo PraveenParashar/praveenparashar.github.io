@@ -17,12 +17,12 @@ timezone: Asia/Kolkata
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Praveen Parashar Blogs                          # the main title
+title: Praveen's Blogs             # the main title
 
 tagline: Learn By doing   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  Let's do it ,Learn By doing.
+  Let's do it ,Learn by doing.
   PraveenParasharBlogs
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
@@ -80,7 +80,7 @@ theme_mode:   # [light|dark]
 img_cdn: ''
 
 # the avatar on sidebar, support local or CORS resources
-avatar: https://cdn.jsdelivr.net/gh/cotes2020/chirpy-images/commons/avatar.jpg
+avatar: http://learning2code.in/Blog/images/profilepic.jpg
 
 # boolean type, the global switch for ToC in posts.
 toc: true
@@ -105,7 +105,7 @@ kramdown:
       start_line: 1
 
 collections:
-  tabs:
+tabs:
     output: true
     sort_by: order
 
