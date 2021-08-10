@@ -1,0 +1,34 @@
+[
+  
+  {
+    "title": "How to add post with tag, category",
+    "url": "/posts/how-to-add-post/",
+    "categories": "Miscellaneous",
+    "tags": "HowTo, Jkeyll",
+    "date": "2021-08-10 12:01:20 +0530",
+    
+
+
+
+
+
+    "snippet": "how to setup blogging site for freeSourcehttps://jekyllrb.com/docs/posts/"
+  },
+  
+  {
+    "title": "The First post",
+    "url": "/posts/firstpost/",
+    "categories": "Miscellaneous",
+    "tags": "HowTo, Jkeyll",
+    "date": "2021-08-10 11:45:20 +0530",
+    
+
+
+
+
+
+    "snippet": "how to setup blogging site for freeSourcehttps://jekyllrb.com/docs/posts/"
+  }
+  
+]
+
