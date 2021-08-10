@@ -1,0 +1,57 @@
+I"<p>Add Open API Documentation(Swagger)
+Add Authentication Azure AD Oauth2.0 
+Authorize Swagger UI to access API</p>
+
+<p>how to add JWT authorization  in Swagger configured  in ASP.NET Core 3.1 with AzureAD
+knowledge level  required: intermediate  for beginner video is coming soon…video for each step</p>
+
+<p>Step1: Add swagger documentation</p>
+
+<p>Step2: AzureAD application Registration - API</p>
+
+<p>Step3: configure API Security (AddAuthentication ,  AddSecurityDefinition , AddSecurityRequirement</p>
+
+<p>Step4: Middleware UseAuthentication and UseAuthorization and Controller Authorization</p>
+
+<p>Step5: AzureAD application Registration - SwaggerUI/ ClientApp</p>
+
+<p>Step6: Add Scop and Permissions</p>
+
+<p>Step7: set AD application values</p>
+
+<p>Step8: Run Api - test authorization</p>
+
+<p>Step9: Get AccessToken from swaggerUI and Call Secure/Protected API methods</p>
+
+<p>Useful Links 
+OAuth 2.0 authorization framework
+https://auth0.com/docs/protocols/oauth2</p>
+
+<p>https://docs.microsoft.com/en-us/azur…</p>
+
+<p>STEP 1 : Add swagger documentation 
+https://docs.microsoft.com/en-us/aspn…</p>
+
+<p>STEP 2: AzureAD application Registration - API
+https://docs.microsoft.com/en-us/azur…</p>
+
+<p>https://docs.microsoft.com/en-us/azur…</p>
+
+<p>STEP 3: configure API Security (AddAuthentication ,  AddSecurityDefinition , AddSecurityRequirement
+https://swagger.io/docs/specification…</p>
+
+<p>https://swagger.io/docs/specification…</p>
+
+<p>https://developers.gettyimages.com/ap…</p>
+
+<p>Step4: Middleware UseAuthentication and UseAuthorization and Controller Authorization</p>
+
+<p>Step5: AzureAD application Registration - SwaggerUI/ ClientApp
+https://docs.microsoft.com/en-us/azur…</p>
+
+<p>Step6: Add Scop and Permissions
+https://docs.microsoft.com/en-us/azur…</p>
+
+<h5 id="source">Source</h5>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sx-I9N2mQ98" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+:ET

@@ -4,7 +4,7 @@
   <id>https://praveenparashar.github.io/</id>
   <title>Praveen's Blogs</title>
   <subtitle>Let's do it ,Learn By doing. PraveenParasharBlogs</subtitle>
-  <updated>2021-08-10T17:34:06+05:30</updated>
+  <updated>2021-08-10T20:33:25+05:30</updated>
   <author>
     <name>Praveen Parashar</name>
     <uri>https://praveenparashar.github.io/</uri>
@@ -17,6 +17,53 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>How to add JWT authorization + Swagger configured + ASP.NET Core 3.1 API with AzureAD</title>
+    <link href="https://praveenparashar.github.io/posts/jwt-auth-dotnetcore/" rel="alternate" type="text/html" title="How to add JWT authorization + Swagger configured + ASP.NET Core 3.1 API with AzureAD" />
+    <published>2021-08-10T19:56:20+05:30</published>
+  
+    <updated>2021-08-10T19:56:20+05:30</updated>
+  
+    <id>https://praveenparashar.github.io/posts/jwt-auth-dotnetcore/</id>
+    <content src="https://praveenparashar.github.io/posts/jwt-auth-dotnetcore/" />
+    <author>
+      <name>Praveen Parashar</name>
+    </author>
+
+  
+    
+    <category term="Azure" />
+    
+    <category term="dotnetcore" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Add Open API Documentation(Swagger)
+Add Authentication Azure AD Oauth2.0 
+Authorize Swagger UI to access API
+
+how to add JWT authorization  in Swagger configured  in ASP.NET Core 3.1 with AzureAD
+knowledge level  required: intermediate  for beginner video is coming soon…video for each step
+
+Step1: Add swagger documentation
+
+Step2: AzureAD application Registration - API
+
+Step3: configure API Sec...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -46,9 +93,7 @@
 
 
 
-      how to setup blogging site for free
-
-Source
+      Source
 https://jekyllrb.com/docs/posts/
 
     </summary>
@@ -58,8 +103,8 @@ https://jekyllrb.com/docs/posts/
 
   
   <entry>
-    <title>The First post</title>
-    <link href="https://praveenparashar.github.io/posts/firstpost/" rel="alternate" type="text/html" title="The First post" />
+    <title>The Basic Template</title>
+    <link href="https://praveenparashar.github.io/posts/firstpost/" rel="alternate" type="text/html" title="The Basic Template" />
     <published>2021-08-10T11:45:20+05:30</published>
   
     <updated>2021-08-10T11:45:20+05:30</updated>
@@ -84,11 +129,23 @@ https://jekyllrb.com/docs/posts/
 
 
 
-      how to setup blogging site for free
+      
+  Create basic template with .md markdown
+  ---
+title: How to add JWT authorization + Swagger configured + ASP.NET Core 3.1 API with AzureAD
+date: 2021-08-10T019:56:20+05:30
+author: Praveen Parashar
+categories: [category1,category2]
+tags: [tag1,tag2,tag3]
+description:  add Post description here...
+---
+  
 
-Source
-https://jekyllrb.com/docs/posts/
 
+For taks List
+- [x] Write the press release
+- [ ] Update the website
+- [ ] Contact the m...
     </summary>
   
 

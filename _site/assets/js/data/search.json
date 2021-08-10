@@ -1,6 +1,21 @@
 [
   
   {
+    "title": "How to add JWT authorization + Swagger configured + ASP.NET Core 3.1 API with AzureAD",
+    "url": "/posts/jwt-auth-dotnetcore/",
+    "categories": "Azure, dotnetcore",
+    "tags": "Azure, Auth2.0, .netcore, swagger",
+    "date": "2021-08-10 19:56:20 +0530",
+    
+
+
+
+
+
+    "snippet": "Add Open API Documentation(Swagger)Add Authentication Azure AD Oauth2.0 Authorize Swagger UI to access APIhow to add JWT authorization  in Swagger configured  in ASP.NET Core 3.1 with AzureADknowledge level  required: intermediate  for beginner video is coming soon…video for each stepStep1: Add s..."
+  },
+  
+  {
     "title": "How to add post with tag, category",
     "url": "/posts/how-to-add-post/",
     "categories": "Miscellaneous",
@@ -12,14 +27,14 @@
 
 
 
-    "snippet": "how to setup blogging site for freeSourcehttps://jekyllrb.com/docs/posts/"
+    "snippet": "Sourcehttps://jekyllrb.com/docs/posts/"
   },
   
   {
-    "title": "The First post",
+    "title": "The Basic Template",
     "url": "/posts/firstpost/",
     "categories": "Miscellaneous",
-    "tags": "HowTo, Jkeyll",
+    "tags": "HowTo, Template, MArkdown",
     "date": "2021-08-10 11:45:20 +0530",
     
 
@@ -27,7 +42,7 @@
 
 
 
-    "snippet": "how to setup blogging site for freeSourcehttps://jekyllrb.com/docs/posts/"
+    "snippet": "  Create basic template with .md markdown  ---title: How to add JWT authorization + Swagger configured + ASP.NET Core 3.1 API with AzureADdate: 2021-08-10T019:56:20+05:30author: Praveen Parasharcategories: [category1,category2]tags: [tag1,tag2,tag3]description:  add Post description here...---  F..."
   }
   
 ]
