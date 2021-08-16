@@ -9,7 +9,7 @@ description: The Template for POST
 >Create basic template with .md markdown
 ```markdown
 ---
-title: How to add JWT authorization + Swagger configured + ASP.NET Core 3.1 API with AzureAD
+title:  The title here
 date: 2021-08-10T019:56:20+05:30
 author: Praveen Parashar
 categories: [category1,category2]
