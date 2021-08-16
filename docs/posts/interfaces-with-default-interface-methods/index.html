@@ -24,25 +24,27 @@
 
   <!-- Begin Jekyll SEO tag v2.7.1 -->
 <meta name="generator" content="Jekyll v4.2.0" />
-<meta property="og:title" content="Praveen’s Blogs" />
+<meta property="og:title" content="Creating classes using interfaces with default interface methods" />
+<meta name="author" content="Praveen Parashar" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="Let’s do it ,Learn By doing. PraveenParasharBlogs" />
-<meta property="og:description" content="Let’s do it ,Learn By doing. PraveenParasharBlogs" />
-<link rel="canonical" href="https://praveenparashar.github.io/posts/2021-08-16-interfaces-with-default-interface-methods/" />
-<meta property="og:url" content="https://praveenparashar.github.io/posts/2021-08-16-interfaces-with-default-interface-methods/" />
+<meta name="description" content="Mix functionality in when creating classes using interfaces with default interface methods" />
+<meta property="og:description" content="Mix functionality in when creating classes using interfaces with default interface methods" />
+<link rel="canonical" href="https://praveenparashar.github.io/posts/interfaces-with-default-interface-methods/" />
+<meta property="og:url" content="https://praveenparashar.github.io/posts/interfaces-with-default-interface-methods/" />
 <meta property="og:site_name" content="Praveen’s Blogs" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-08-16T08:56:00+05:30" />
+<meta property="article:published_time" content="2021-08-16T08:36:20+05:30" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Praveen’s Blogs" />
+<meta property="twitter:title" content="Creating classes using interfaces with default interface methods" />
 <meta name="twitter:site" content="@twitt" />
+<meta name="twitter:creator" content="@Praveen Parashar" />
 <meta name="google-site-verification" content="google_meta_tag_verification" />
 <script type="application/ld+json">
-{"headline":"Praveen’s Blogs","dateModified":"2021-08-16T08:56:00+05:30","datePublished":"2021-08-16T08:56:00+05:30","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://praveenparashar.github.io/posts/2021-08-16-interfaces-with-default-interface-methods/"},"description":"Let’s do it ,Learn By doing. PraveenParasharBlogs","url":"https://praveenparashar.github.io/posts/2021-08-16-interfaces-with-default-interface-methods/","@context":"https://schema.org"}</script>
+{"dateModified":"2021-08-16T08:36:20+05:30","datePublished":"2021-08-16T08:36:20+05:30","mainEntityOfPage":{"@type":"WebPage","@id":"https://praveenparashar.github.io/posts/interfaces-with-default-interface-methods/"},"author":{"@type":"Person","name":"Praveen Parashar"},"@type":"BlogPosting","description":"Mix functionality in when creating classes using interfaces with default interface methods","url":"https://praveenparashar.github.io/posts/interfaces-with-default-interface-methods/","headline":"Creating classes using interfaces with default interface methods","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title> | Praveen's Blogs
+  <title>Creating classes using interfaces with default interface methods | Praveen's Blogs
   </title>
 
   <!--
@@ -441,7 +443,7 @@
       
 
         
-          <span></span>
+          <span>Creating classes using interfaces with default interface methods</span>
 
         
 
@@ -504,7 +506,7 @@
 
     <div class="post pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4">
 
-      <h1 data-toc-skip></h1>
+      <h1 data-toc-skip>Creating classes using interfaces with default interface methods</h1>
 
       <div class="post-meta text-muted d-flex flex-column">
         <!-- Published date and author -->
@@ -522,7 +524,7 @@
   
     data-toggle="tooltip"
     data-placement="bottom"
-    title="Mon, Aug 16, 2021,  8:56 AM +0530"
+    title="Mon, Aug 16, 2021,  8:36 AM +0530"
   
 
   
@@ -535,13 +537,13 @@
     Aug 16
   
 
-  <i class="unloaded">2021-08-16T08:56:00+05:30</i>
+  <i class="unloaded">2021-08-16T08:36:20+05:30</i>
 
 </span>
 
           by
           <span class="author">
-            
+            Praveen Parashar
           </span>
         </div>
 
@@ -577,8 +579,8 @@
         <p>In C# 8.0  you can define an implementation when you declare a member of an interface. This feature provides new capabilities where you can define default implementations for features declared in interfaces. Classes can pick when to override functionality, when to use the default functionality, and when not to declare support for discrete features.</p>
 
 <p>Create interfaces with implementations that describe discrete features.
-Create classes that use the default implementations.
-Create classes that override some or all of the default implementations.</p>
+  Create classes that use the default implementations.
+  Create classes that override some or all of the default implementations.</p>
 
 <h4 id="limitations-of-extension-methods">Limitations of extension methods</h4>
 
@@ -625,47 +627,47 @@ Create classes that override some or all of the default implementations.</p>
 35
 36
 37
-</pre></td><td class="rouge-code"><pre><span class="k">interface</span> <span class="nc">that</span> <span class="n">defines</span> <span class="n">the</span> <span class="n">behavior</span> <span class="k">for</span> <span class="n">all</span> <span class="n">lights</span>
-<span class="k">public</span> <span class="k">interface</span> <span class="nc">ILight</span>
-<span class="p">{</span>
-    <span class="k">void</span> <span class="nf">SwitchOn</span><span class="p">();</span>
-    <span class="k">void</span> <span class="nf">SwitchOff</span><span class="p">();</span>
-    <span class="kt">bool</span> <span class="nf">IsOn</span><span class="p">();</span>
-<span class="p">}</span>
-<span class="n">A</span> <span class="n">basic</span> <span class="n">overhead</span> <span class="n">light</span> <span class="n">fixture</span> <span class="n">might</span> <span class="n">implement</span> <span class="k">this</span> <span class="k">interface</span> <span class="nc">as</span> <span class="n">shown</span> <span class="k">in</span> <span class="n">the</span> <span class="n">following</span> <span class="n">code</span><span class="p">:</span>
+</pre></td><td class="rouge-code"><pre>  <span class="k">interface</span> <span class="nc">that</span> <span class="n">defines</span> <span class="n">the</span> <span class="n">behavior</span> <span class="k">for</span> <span class="n">all</span> <span class="n">lights</span>
+  <span class="k">public</span> <span class="k">interface</span> <span class="nc">ILight</span>
+  <span class="p">{</span>
+      <span class="k">void</span> <span class="nf">SwitchOn</span><span class="p">();</span>
+      <span class="k">void</span> <span class="nf">SwitchOff</span><span class="p">();</span>
+      <span class="kt">bool</span> <span class="nf">IsOn</span><span class="p">();</span>
+  <span class="p">}</span>
+  <span class="n">A</span> <span class="n">basic</span> <span class="n">overhead</span> <span class="n">light</span> <span class="n">fixture</span> <span class="n">might</span> <span class="n">implement</span> <span class="k">this</span> <span class="k">interface</span> <span class="nc">as</span> <span class="n">shown</span> <span class="k">in</span> <span class="n">the</span> <span class="n">following</span> <span class="n">code</span><span class="p">:</span>
 
-<span class="k">public</span> <span class="k">class</span> <span class="nc">OverheadLight</span> <span class="p">:</span> <span class="n">ILight</span>
-<span class="p">{</span>
-    <span class="k">private</span> <span class="kt">bool</span> <span class="n">isOn</span><span class="p">;</span>
-    <span class="k">public</span> <span class="kt">bool</span> <span class="nf">IsOn</span><span class="p">()</span> <span class="p">=&gt;</span> <span class="n">isOn</span><span class="p">;</span>
-    <span class="k">public</span> <span class="k">void</span> <span class="nf">SwitchOff</span><span class="p">()</span> <span class="p">=&gt;</span> <span class="n">isOn</span> <span class="p">=</span> <span class="k">false</span><span class="p">;</span>
-    <span class="k">public</span> <span class="k">void</span> <span class="nf">SwitchOn</span><span class="p">()</span> <span class="p">=&gt;</span> <span class="n">isOn</span> <span class="p">=</span> <span class="k">true</span><span class="p">;</span>
+  <span class="k">public</span> <span class="k">class</span> <span class="nc">OverheadLight</span> <span class="p">:</span> <span class="n">ILight</span>
+  <span class="p">{</span>
+      <span class="k">private</span> <span class="kt">bool</span> <span class="n">isOn</span><span class="p">;</span>
+      <span class="k">public</span> <span class="kt">bool</span> <span class="nf">IsOn</span><span class="p">()</span> <span class="p">=&gt;</span> <span class="n">isOn</span><span class="p">;</span>
+      <span class="k">public</span> <span class="k">void</span> <span class="nf">SwitchOff</span><span class="p">()</span> <span class="p">=&gt;</span> <span class="n">isOn</span> <span class="p">=</span> <span class="k">false</span><span class="p">;</span>
+      <span class="k">public</span> <span class="k">void</span> <span class="nf">SwitchOn</span><span class="p">()</span> <span class="p">=&gt;</span> <span class="n">isOn</span> <span class="p">=</span> <span class="k">true</span><span class="p">;</span>
 
-    <span class="k">public</span> <span class="k">override</span> <span class="kt">string</span> <span class="nf">ToString</span><span class="p">()</span> <span class="p">=&gt;</span> <span class="s">$"The light is </span><span class="p">{(</span><span class="n">isOn</span> <span class="p">?</span> <span class="s">"on"</span> <span class="p">:</span> <span class="s">"off"</span><span class="p">)}</span><span class="s">"</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="n">Next</span><span class="p">,</span> <span class="k">let</span><span class="err">'</span><span class="n">s</span> <span class="n">define</span> <span class="n">the</span> <span class="k">interface</span> <span class="nc">for</span> <span class="n">a</span> <span class="n">light</span> <span class="n">that</span> <span class="n">can</span> <span class="n">automatically</span> <span class="n">turn</span> <span class="n">off</span> <span class="n">after</span> <span class="n">a</span> <span class="n">timeout</span><span class="p">:</span>
- <span class="m">10</span><span class="n">T011public</span> <span class="k">interface</span> <span class="nc">ITimerLight</span> <span class="p">:</span> <span class="n">ILight</span>
-<span class="p">{</span>
-    <span class="n">Task</span> <span class="nf">TurnOnFor</span><span class="p">(</span><span class="kt">int</span> <span class="n">duration</span><span class="p">);</span>
-<span class="p">}</span>  
+      <span class="k">public</span> <span class="k">override</span> <span class="kt">string</span> <span class="nf">ToString</span><span class="p">()</span> <span class="p">=&gt;</span> <span class="s">$"The light is </span><span class="p">{(</span><span class="n">isOn</span> <span class="p">?</span> <span class="s">"on"</span> <span class="p">:</span> <span class="s">"off"</span><span class="p">)}</span><span class="s">"</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">Next</span><span class="p">,</span> <span class="k">let</span><span class="err">'</span><span class="n">s</span> <span class="n">define</span> <span class="n">the</span> <span class="k">interface</span> <span class="nc">for</span> <span class="n">a</span> <span class="n">light</span> <span class="n">that</span> <span class="n">can</span> <span class="n">automatically</span> <span class="n">turn</span> <span class="n">off</span> <span class="n">after</span> <span class="n">a</span> <span class="n">timeout</span><span class="p">:</span>
+  <span class="m">10</span><span class="n">T011public</span> <span class="k">interface</span> <span class="nc">ITimerLight</span> <span class="p">:</span> <span class="n">ILight</span>
+  <span class="p">{</span>
+      <span class="n">Task</span> <span class="nf">TurnOnFor</span><span class="p">(</span><span class="kt">int</span> <span class="n">duration</span><span class="p">);</span>
+  <span class="p">}</span>  
 
-<span class="n">You</span> <span class="n">could</span> <span class="k">add</span> <span class="n">a</span> <span class="n">basic</span> <span class="n">implementation</span> <span class="n">to</span> <span class="n">the</span> <span class="n">overhead</span> <span class="n">light</span><span class="p">,</span> <span class="n">but</span> <span class="n">a</span> <span class="n">better</span> <span class="n">solution</span> <span class="k">is</span> <span class="n">to</span> <span class="n">modify</span> <span class="k">this</span> <span class="k">interface</span> <span class="nc">definition</span> <span class="n">to</span> <span class="n">provide</span> <span class="n">a</span> <span class="k">virtual</span> <span class="k">default</span> <span class="n">implementation</span><span class="p">:</span>
-  
-  <span class="k">public</span> <span class="k">interface</span> <span class="nc">ITimerLight</span> <span class="p">:</span> <span class="n">ILight</span>
-<span class="p">{</span>
-    <span class="k">public</span> <span class="k">async</span> <span class="n">Task</span> <span class="nf">TurnOnFor</span><span class="p">(</span><span class="kt">int</span> <span class="n">duration</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="n">Console</span><span class="p">.</span><span class="nf">WriteLine</span><span class="p">(</span><span class="s">"Using the default interface method for the ITimerLight.TurnOnFor."</span><span class="p">);</span>
-        <span class="nf">SwitchOn</span><span class="p">();</span>
-        <span class="k">await</span> <span class="n">Task</span><span class="p">.</span><span class="nf">Delay</span><span class="p">(</span><span class="n">duration</span><span class="p">);</span>
-        <span class="nf">SwitchOff</span><span class="p">();</span>
-        <span class="n">Console</span><span class="p">.</span><span class="nf">WriteLine</span><span class="p">(</span><span class="s">"Completed ITimerLight.TurnOnFor sequence."</span><span class="p">);</span>
-    <span class="p">}</span>
-<span class="p">}</span>
+  <span class="n">You</span> <span class="n">could</span> <span class="k">add</span> <span class="n">a</span> <span class="n">basic</span> <span class="n">implementation</span> <span class="n">to</span> <span class="n">the</span> <span class="n">overhead</span> <span class="n">light</span><span class="p">,</span> <span class="n">but</span> <span class="n">a</span> <span class="n">better</span> <span class="n">solution</span> <span class="k">is</span> <span class="n">to</span> <span class="n">modify</span> <span class="k">this</span> <span class="k">interface</span> <span class="nc">definition</span> <span class="n">to</span> <span class="n">provide</span> <span class="n">a</span> <span class="k">virtual</span> <span class="k">default</span> <span class="n">implementation</span><span class="p">:</span>
+    
+    <span class="k">public</span> <span class="k">interface</span> <span class="nc">ITimerLight</span> <span class="p">:</span> <span class="n">ILight</span>
+  <span class="p">{</span>
+      <span class="k">public</span> <span class="k">async</span> <span class="n">Task</span> <span class="nf">TurnOnFor</span><span class="p">(</span><span class="kt">int</span> <span class="n">duration</span><span class="p">)</span>
+      <span class="p">{</span>
+          <span class="n">Console</span><span class="p">.</span><span class="nf">WriteLine</span><span class="p">(</span><span class="s">"Using the default interface method for the ITimerLight.TurnOnFor."</span><span class="p">);</span>
+          <span class="nf">SwitchOn</span><span class="p">();</span>
+          <span class="k">await</span> <span class="n">Task</span><span class="p">.</span><span class="nf">Delay</span><span class="p">(</span><span class="n">duration</span><span class="p">);</span>
+          <span class="nf">SwitchOff</span><span class="p">();</span>
+          <span class="n">Console</span><span class="p">.</span><span class="nf">WriteLine</span><span class="p">(</span><span class="s">"Completed ITimerLight.TurnOnFor sequence."</span><span class="p">);</span>
+      <span class="p">}</span>
+  <span class="p">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
 <p>Reference tutorials:
-  <a href="https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/tutorials/mixins-with-default-interface-methods" title="default-interface-methods">default-interface-methods</a></p>
+    <a href="https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/tutorials/mixins-with-default-interface-methods" title="default-interface-methods">default-interface-methods</a></p>
 
 
 
@@ -675,8 +677,31 @@ Create classes that override some or all of the default implementations.</p>
 
         <!-- categories -->
         
+        <div class="post-meta mb-3">
+          <i class="far fa-folder-open fa-fw mr-1"></i>
+          
+            <a href='/categories/c/'>C#</a>
+        </div>
+        
 
         <!-- tags -->
+        
+        <div class="post-tags">
+          <i class="fa fa-tags fa-fw mr-1"></i>
+          
+          <a href="/tags/c/"
+            class="post-tag no-text-decoration" >C#</a>
+          
+          <a href="/tags/advance-concepts/"
+            class="post-tag no-text-decoration" >Advance-concepts</a>
+          
+          <a href="/tags/tutorials/"
+            class="post-tag no-text-decoration" >tutorials</a>
+          
+          <a href="/tags/interview/"
+            class="post-tag no-text-decoration" >interview</a>
+          
+          </div>
         
 
         <div class="post-tail-bottom
@@ -695,19 +720,19 @@ Create classes that override some or all of the default implementations.</p>
 
     
       
-        <a href="https://twitter.com/intent/tweet?text= - Praveen's Blogs&url=https://praveenparashar.github.io/posts/2021-08-16-interfaces-with-default-interface-methods/" data-toggle="tooltip" data-placement="top"
+        <a href="https://twitter.com/intent/tweet?text=Creating classes using interfaces with default interface methods - Praveen's Blogs&url=https://praveenparashar.github.io/posts/interfaces-with-default-interface-methods/" data-toggle="tooltip" data-placement="top"
           title="Twitter" target="_blank" rel="noopener" aria-label="Twitter">
           <i class="fa-fw fab fa-twitter"></i>
         </a>
     
       
-        <a href="https://www.facebook.com/sharer/sharer.php?title= - Praveen's Blogs&u=https://praveenparashar.github.io/posts/2021-08-16-interfaces-with-default-interface-methods/" data-toggle="tooltip" data-placement="top"
+        <a href="https://www.facebook.com/sharer/sharer.php?title=Creating classes using interfaces with default interface methods - Praveen's Blogs&u=https://praveenparashar.github.io/posts/interfaces-with-default-interface-methods/" data-toggle="tooltip" data-placement="top"
           title="Facebook" target="_blank" rel="noopener" aria-label="Facebook">
           <i class="fa-fw fab fa-facebook-square"></i>
         </a>
     
       
-        <a href="https://telegram.me/share?text= - Praveen's Blogs&url=https://praveenparashar.github.io/posts/2021-08-16-interfaces-with-default-interface-methods/" data-toggle="tooltip" data-placement="top"
+        <a href="https://telegram.me/share?text=Creating classes using interfaces with default interface methods - Praveen's Blogs&url=https://praveenparashar.github.io/posts/interfaces-with-default-interface-methods/" data-toggle="tooltip" data-placement="top"
           title="Telegram" target="_blank" rel="noopener" aria-label="Telegram">
           <i class="fa-fw fab fa-telegram"></i>
         </a>
@@ -815,25 +840,10 @@ Create classes that override some or all of the default implementations.</p>
     
     
     
-      
-        
-        
-
   
     
     
     
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
     
   
     
@@ -844,20 +854,6 @@ Create classes that override some or all of the default implementations.</p>
         
         
 
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -880,25 +876,6 @@ Create classes that override some or all of the default implementations.</p>
     
     
       
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
         
         
 
@@ -908,25 +885,6 @@ Create classes that override some or all of the default implementations.</p>
     
     
       
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
     
   
     
@@ -970,6 +928,24 @@ Create classes that override some or all of the default implementations.</p>
     
     
     
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
   
     
     
@@ -993,6 +969,188 @@ Create classes that override some or all of the default implementations.</p>
         
         
 
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
   
     
     
@@ -1064,10 +1222,19 @@ Create classes that override some or all of the default implementations.</p>
         <a class="post-tag" href="/tags/netcore/">.netcore</a>
       
         
+        <a class="post-tag" href="/tags/advance-concepts/">Advance-concepts</a>
+      
+        
         <a class="post-tag" href="/tags/auth2-0/">Auth2.0</a>
       
         
         <a class="post-tag" href="/tags/azure/">Azure</a>
+      
+        
+        <a class="post-tag" href="/tags/c/">C#</a>
+      
+        
+        <a class="post-tag" href="/tags/interview/">interview</a>
       
         
         <a class="post-tag" href="/tags/jkeyll/">Jkeyll</a>
@@ -1077,9 +1244,6 @@ Create classes that override some or all of the default implementations.</p>
       
         
         <a class="post-tag" href="/tags/swagger/">swagger</a>
-      
-        
-        <a class="post-tag" href="/tags/template/">Template</a>
       
 
       </div>
@@ -1485,25 +1649,10 @@ descriptio...
     
     
     
-      
-        
-        
-
   
     
     
     
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
     
   
     
@@ -1514,20 +1663,6 @@ descriptio...
         
         
 
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -1550,25 +1685,6 @@ descriptio...
     
     
       
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
         
         
 
@@ -1578,25 +1694,6 @@ descriptio...
     
     
       
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
     
   
     
@@ -1640,6 +1737,24 @@ descriptio...
     
     
     
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
   
     
     
@@ -1663,6 +1778,188 @@ descriptio...
         
         
 
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
   
     
     
@@ -1729,10 +2026,19 @@ descriptio...
         <a class="post-tag" href="/tags/netcore/">.netcore</a>
       
         
+        <a class="post-tag" href="/tags/advance-concepts/">Advance concepts</a>
+      
+        
         <a class="post-tag" href="/tags/auth2-0/">Auth2.0</a>
       
         
         <a class="post-tag" href="/tags/azure/">Azure</a>
+      
+        
+        <a class="post-tag" href="/tags/c/">C#</a>
+      
+        
+        <a class="post-tag" href="/tags/interview/">interview</a>
       
         
         <a class="post-tag" href="/tags/jkeyll/">Jkeyll</a>
@@ -1742,9 +2048,6 @@ descriptio...
       
         
         <a class="post-tag" href="/tags/swagger/">swagger</a>
-      
-        
-        <a class="post-tag" href="/tags/template/">Template</a>
       
 
     </div>

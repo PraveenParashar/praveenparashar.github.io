@@ -4,7 +4,7 @@
   <id>https://praveenparashar.github.io/</id>
   <title>Praveen's Blogs</title>
   <subtitle>Let's do it ,Learn By doing. PraveenParasharBlogs</subtitle>
-  <updated>2021-08-16T08:56:00+05:30</updated>
+  <updated>2021-08-16T09:02:35+05:30</updated>
   <author>
     <name>Praveen Parashar</name>
     <uri>https://praveenparashar.github.io/</uri>
@@ -20,19 +20,21 @@
 
   
   <entry>
-    <title></title>
-    <link href="https://praveenparashar.github.io/posts/2021-08-16-interfaces-with-default-interface-methods/" rel="alternate" type="text/html" title="" />
-    <published>2021-08-16T08:56:00+05:30</published>
+    <title>Creating classes using interfaces with default interface methods</title>
+    <link href="https://praveenparashar.github.io/posts/interfaces-with-default-interface-methods/" rel="alternate" type="text/html" title="Creating classes using interfaces with default interface methods" />
+    <published>2021-08-16T08:36:20+05:30</published>
   
-    <updated>2021-08-16T08:56:00+05:30</updated>
+    <updated>2021-08-16T08:36:20+05:30</updated>
   
-    <id>https://praveenparashar.github.io/posts/2021-08-16-interfaces-with-default-interface-methods/</id>
-    <content src="https://praveenparashar.github.io/posts/2021-08-16-interfaces-with-default-interface-methods/" />
+    <id>https://praveenparashar.github.io/posts/interfaces-with-default-interface-methods/</id>
+    <content src="https://praveenparashar.github.io/posts/interfaces-with-default-interface-methods/" />
     <author>
       <name>Praveen Parashar</name>
     </author>
 
   
+    
+    <category term="C#" />
     
   
 
@@ -141,7 +143,7 @@ https://jekyllrb.com/docs/posts/
     <link href="https://praveenparashar.github.io/posts/firstpost/" rel="alternate" type="text/html" title="The Basic Template" />
     <published>2021-08-10T11:45:20+05:30</published>
   
-    <updated>2021-08-10T20:39:08+05:30</updated>
+    <updated>2021-08-16T09:01:02+05:30</updated>
   
     <id>https://praveenparashar.github.io/posts/firstpost/</id>
     <content src="https://praveenparashar.github.io/posts/firstpost/" />
