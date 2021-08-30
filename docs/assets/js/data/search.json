@@ -1,6 +1,21 @@
 [
   
   {
+    "title": "Azure Active Directory integrations with authentication",
+    "url": "/posts/AzureAD-Authemtication-Provisioning-Protocol/",
+    "categories": "Azure",
+    "tags": "Azure, Advance-concepts, Authentication, AzureAD, interview",
+    "date": "2021-08-30 12:36:20 +0530",
+    
+
+
+
+
+
+    "snippet": "The following table presents authentication Azure AD integration with legacy authentication protocols and their capabilities reference OAuth 2.0 authentication with Azure Active Directoryhe OAuth 2.0 is the industry protocol for authorization. It allows a user to grant limited access to its prote..."
+  },
+  
+  {
     "title": "Creating classes using interfaces with default interface methods",
     "url": "/posts/interfaces-with-default-interface-methods/",
     "categories": "C#",

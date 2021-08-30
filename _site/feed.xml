@@ -4,7 +4,7 @@
   <id>https://praveenparashar.github.io/</id>
   <title>Praveen's Blogs</title>
   <subtitle>Let's do it ,Learn By doing. PraveenParasharBlogs</subtitle>
-  <updated>2021-08-16T09:07:51+05:30</updated>
+  <updated>2021-08-30T13:22:13+05:30</updated>
   <author>
     <name>Praveen Parashar</name>
     <uri>https://praveenparashar.github.io/</uri>
@@ -17,6 +17,46 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Azure Active Directory integrations with authentication</title>
+    <link href="https://praveenparashar.github.io/posts/AzureAD-Authemtication-Provisioning-Protocol/" rel="alternate" type="text/html" title="Azure Active Directory integrations with authentication" />
+    <published>2021-08-30T12:36:20+05:30</published>
+  
+    <updated>2021-08-30T12:36:20+05:30</updated>
+  
+    <id>https://praveenparashar.github.io/posts/AzureAD-Authemtication-Provisioning-Protocol/</id>
+    <content src="https://praveenparashar.github.io/posts/AzureAD-Authemtication-Provisioning-Protocol/" />
+    <author>
+      <name>Praveen Parashar</name>
+    </author>
+
+  
+    
+    <category term="Azure" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      The following table presents authentication Azure AD integration with legacy authentication protocols and their capabilities
+
+ reference 
+
+OAuth 2.0 authentication with Azure Active Directory
+
+he OAuth 2.0 is the industry protocol for authorization. It allows a user to grant limited access to its protected resources. Designed to work specifically with Hypertext Transfer Protocol (HTTP), OAuth s...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
