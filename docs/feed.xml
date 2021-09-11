@@ -4,7 +4,7 @@
   <id>https://praveenparashar.github.io/</id>
   <title>Praveen's Blogs</title>
   <subtitle>Let's do it ,Learn By doing. PraveenParasharBlogs</subtitle>
-  <updated>2021-08-30T13:22:37+05:30</updated>
+  <updated>2021-09-11T09:41:59+05:30</updated>
   <author>
     <name>Praveen Parashar</name>
     <uri>https://praveenparashar.github.io/</uri>
@@ -17,6 +17,86 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title></title>
+    <link href="https://praveenparashar.github.io/posts/2021-09-10-Authentication-must-know-lexicon/" rel="alternate" type="text/html" title="" />
+    <published>2021-09-11T09:41:59+05:30</published>
+  
+    <updated>2021-09-11T09:41:59+05:30</updated>
+  
+    <id>https://praveenparashar.github.io/posts/2021-09-10-Authentication-must-know-lexicon/</id>
+    <content src="https://praveenparashar.github.io/posts/2021-09-10-Authentication-must-know-lexicon/" />
+    <author>
+      <name>Praveen Parashar</name>
+    </author>
+
+  
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Updating Soon …
+
+ reference 
+
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>internals-of-builtin-ioc-container-in-aspnet-core</title>
+    <link href="https://praveenparashar.github.io/posts/internals-of-builtin-ioc-container-in-aspnet-core/" rel="alternate" type="text/html" title="internals-of-builtin-ioc-container-in-aspnet-core" />
+    <published>2021-09-11T08:55:20+05:30</published>
+  
+    <updated>2021-09-11T08:55:20+05:30</updated>
+  
+    <id>https://praveenparashar.github.io/posts/internals-of-builtin-ioc-container-in-aspnet-core/</id>
+    <content src="https://praveenparashar.github.io/posts/internals-of-builtin-ioc-container-in-aspnet-core/" />
+    <author>
+      <name>Praveen Parashar</name>
+    </author>
+
+  
+    
+    <category term="Miscellaneous" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      ###
+ASP.NET Core: Built-in IoC Container
+
+ASP.NET Core framework includes built-in IoC container for automatic dependency injection. The built-in IoC container is a simple yet effective container. Let’s understand how the built-in IoC container works internally.
+
+The followings are important interfaces and classes for built-in IoC container:
+
+Interfaces:
+IServiceProvider
+IServiceCollection
+
+Cla...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -136,101 +216,6 @@ Step1: Add swagger documentation
 Step2: AzureAD application Registration - API
 
 Step3: configure API Sec...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>How to add post with tag, category</title>
-    <link href="https://praveenparashar.github.io/posts/how-to-add-post/" rel="alternate" type="text/html" title="How to add post with tag, category" />
-    <published>2021-08-10T12:01:20+05:30</published>
-  
-    <updated>2021-08-10T20:39:08+05:30</updated>
-  
-    <id>https://praveenparashar.github.io/posts/how-to-add-post/</id>
-    <content src="https://praveenparashar.github.io/posts/how-to-add-post/" />
-    <author>
-      <name>Praveen Parashar</name>
-    </author>
-
-  
-    
-    <category term="Miscellaneous" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Source
-https://jekyllrb.com/docs/posts/
-
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>The Basic Template</title>
-    <link href="https://praveenparashar.github.io/posts/firstpost/" rel="alternate" type="text/html" title="The Basic Template" />
-    <published>2021-08-10T11:45:20+05:30</published>
-  
-    <updated>2021-08-16T09:01:02+05:30</updated>
-  
-    <id>https://praveenparashar.github.io/posts/firstpost/</id>
-    <content src="https://praveenparashar.github.io/posts/firstpost/" />
-    <author>
-      <name>Praveen Parashar</name>
-    </author>
-
-  
-    
-    <category term="Miscellaneous" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      
-  Create basic template with .md markdown
-  ---
-title:  The title here
-date: 2021-08-10T019:56:20+05:30
-author: Praveen Parashar
-categories: [category1,category2]
-tags: [tag1,tag2,tag3]
-description:  add Post description here...
----
-  
-
-
-For taks List
-- [x] Write the press release
-- [ ] Update the website
-- [ ] Contact the media
-
-
-For CODE BLOCK
-code here
-
-
-
-# Here's a Heading
-I really like us...
     </summary>
   
 

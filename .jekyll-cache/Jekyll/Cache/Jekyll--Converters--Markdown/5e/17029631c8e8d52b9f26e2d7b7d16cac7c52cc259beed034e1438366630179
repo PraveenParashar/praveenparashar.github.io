@@ -1,0 +1,79 @@
+I"�<h4 id="aspnet-core-built-in-ioc-container">ASP.NET Core: Built-in IoC Container</h4>
+
+<p>ASP.NET Core framework includes built-in IoC container for automatic dependency injection. The built-in IoC container is a simple yet effective container. Let’s understand how the built-in IoC container works internally.</p>
+
+<h3 id="the-followings-are-important-interfaces-and-classes-for-built-in-ioc-container">The followings are important interfaces and classes for built-in IoC container:</h3>
+
+<h3 id="interfaces">Interfaces:</h3>
+<p>IServiceProvider
+IServiceCollection</p>
+
+<h3 id="classes">Classes:</h3>
+<p>ServiceProvider
+ServiceCollection
+ServiceDescription
+ServiceCollectionServiceExtensions
+ServiceCollectionContainerBuilderExtensions</p>
+
+<h3 id="the-following-diagram-illustrates-the-relationship-between-these-classes">The following diagram illustrates the relationship between these classes:</h3>
+
+<h2 id="built-in-ioc-container">built-in IoC Container</h2>
+
+<h2 id="iservicecollection">IServiceCollection</h2>
+<p>As you know, we can register application services with built-in IoC container in the Configure method of Startup class by using IServiceCollection. IServiceCollection interface is an empty interface. It just inherits IList<servicedescriptor>. See the source code here.</servicedescriptor></p>
+
+<p>The ServiceCollection class implements IServiceCollection interface. See the ServiceCollection source code here.</p>
+
+<p>So, the services you add in the IServiceCollection type instance, it actually creates an instance of ServiceDescriptor and adds it to the list.</p>
+
+<h2 id="iserviceprovider">IServiceProvider</h2>
+<p>IServiceProvider includes GetService method. The ServiceProvider class implements IServiceProvider interface which returns registered services with the container. We cannot instantiate ServiceProvider class because its constructors are marked with internal access modifier.</p>
+
+<h2 id="servicecollectionserviceextensions">ServiceCollectionServiceExtensions</h2>
+<p>The ServiceCollectionServiceExtensions class includes extension methods related to service registrations which can be used to add services with lifetime. AddSingleton, AddTransient, AddScoped extension methods defined in this class.</p>
+
+<p>ServiceCollectionContainerBuilderExtensions
+ServiceCollectionContainerBuilderExtensions class includes BuildServiceProvider extension method which creates and returns an instance of ServiceProvider.</p>
+
+<p>There are three ways to get an instance of IServiceProvider:</p>
+
+<h3 id="using-iapplicationbuilder">Using IApplicationBuilder</h3>
+<p>We can get the services in Configure method using IApplicationBuilder’s ApplicationServices property as shown below.</p>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre>public void Configure(IServiceProvider pro, IApplicationBuilder app, IHostingEnvironment env)
+{
+    var services = app.ApplicationServices;
+    var logger = services.GetService<span class="nt">&lt;ILog&gt;</span>() }
+
+   .... 
+}
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h3 id="using-httpcontext">Using HttpContext</h3>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="rouge-code"><pre>var services = HttpContext.RequestServices;
+var log = (ILog)services.GetService(typeof(ILog));
+Using IServiceCollection
+public void ConfigureServices(IServiceCollection services)
+{
+    var serviceProvider = services.BuildServiceProvider();
+
+}
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>REFERENCE LINK-
+<a href="https://www.tutorialsteacher.com/core/internals-of-builtin-ioc-container-in-aspnet-core" title="builtin-ioc-container-in-aspnet-core">here</a></p>
+:ET
