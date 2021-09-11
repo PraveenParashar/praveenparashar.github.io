@@ -4,7 +4,7 @@
   <id>https://praveenparashar.github.io/</id>
   <title>Praveen's Blogs</title>
   <subtitle>Let's do it ,Learn By doing. PraveenParasharBlogs</subtitle>
-  <updated>2021-09-11T09:41:59+05:30</updated>
+  <updated>2021-09-11T09:51:25+05:30</updated>
   <author>
     <name>Praveen Parashar</name>
     <uri>https://praveenparashar.github.io/</uri>
@@ -17,41 +17,6 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
-
-  
-  <entry>
-    <title></title>
-    <link href="https://praveenparashar.github.io/posts/2021-09-10-Authentication-must-know-lexicon/" rel="alternate" type="text/html" title="" />
-    <published>2021-09-11T09:41:59+05:30</published>
-  
-    <updated>2021-09-11T09:41:59+05:30</updated>
-  
-    <id>https://praveenparashar.github.io/posts/2021-09-10-Authentication-must-know-lexicon/</id>
-    <content src="https://praveenparashar.github.io/posts/2021-09-10-Authentication-must-know-lexicon/" />
-    <author>
-      <name>Praveen Parashar</name>
-    </author>
-
-  
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Updating Soon …
-
- reference 
-
-    </summary>
-  
-
-  </entry>
 
   
   <entry>
@@ -81,8 +46,7 @@
 
 
 
-      ###
-ASP.NET Core: Built-in IoC Container
+      ASP.NET Core: Built-in IoC Container
 
 ASP.NET Core framework includes built-in IoC container for automatic dependency injection. The built-in IoC container is a simple yet effective container. Let’s understand how the built-in IoC container works internally.
 
@@ -92,7 +56,46 @@ Interfaces:
 IServiceProvider
 IServiceCollection
 
-Cla...
+Classes...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Authentication Must know lexicon</title>
+    <link href="https://praveenparashar.github.io/posts/Authentication-must-know-lexicon/" rel="alternate" type="text/html" title="Authentication Must know lexicon" />
+    <published>2021-09-10T09:25:20+05:30</published>
+  
+    <updated>2021-09-10T09:25:20+05:30</updated>
+  
+    <id>https://praveenparashar.github.io/posts/Authentication-must-know-lexicon/</id>
+    <content src="https://praveenparashar.github.io/posts/Authentication-must-know-lexicon/" />
+    <author>
+      <name>Praveen Parashar</name>
+    </author>
+
+  
+    
+    <category term="Miscellaneous" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Azure Active Directory ,LDAP,OAuth2.0, IdToken,
+ODIC,OpenAPI ,Header, JWT, OpenID Connect, bearer Tokens,
+Access Token , Client App , client ID, Refresh tokens, Protocols,
+Daemons ,SPA, SSO, Authentication Flow , client credentials flow ,
+on-behalf-of Flow,Implicit Flow, MSAL,Autherization Code Flow,
+Permissions,consent ,Scopes and permissions,Permission types,Consent types, claims, Jwt.ms , Pa...
     </summary>
   
 

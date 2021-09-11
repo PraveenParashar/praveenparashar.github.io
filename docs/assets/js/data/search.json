@@ -1,21 +1,6 @@
 [
   
   {
-    "title": "",
-    "url": "/posts/2021-09-10-Authentication-must-know-lexicon/",
-    "categories": "",
-    "tags": "",
-    "date": "2021-09-11 09:41:59 +0530",
-    
-
-
-
-
-
-    "snippet": "Updating Soon … reference "
-  },
-  
-  {
     "title": "internals-of-builtin-ioc-container-in-aspnet-core",
     "url": "/posts/internals-of-builtin-ioc-container-in-aspnet-core/",
     "categories": "Miscellaneous",
@@ -27,7 +12,22 @@
 
 
 
-    "snippet": "###ASP.NET Core: Built-in IoC ContainerASP.NET Core framework includes built-in IoC container for automatic dependency injection. The built-in IoC container is a simple yet effective container. Let’s understand how the built-in IoC container works internally.The followings are important interface..."
+    "snippet": "ASP.NET Core: Built-in IoC ContainerASP.NET Core framework includes built-in IoC container for automatic dependency injection. The built-in IoC container is a simple yet effective container. Let’s understand how the built-in IoC container works internally.The followings are important interfaces a..."
+  },
+  
+  {
+    "title": "Authentication Must know lexicon",
+    "url": "/posts/Authentication-must-know-lexicon/",
+    "categories": "Miscellaneous",
+    "tags": "Azure, Authentication, Must-Know, Interview",
+    "date": "2021-09-10 09:25:20 +0530",
+    
+
+
+
+
+
+    "snippet": "Azure Active Directory ,LDAP,OAuth2.0, IdToken,ODIC,OpenAPI ,Header, JWT, OpenID Connect, bearer Tokens,Access Token , Client App , client ID, Refresh tokens, Protocols,Daemons ,SPA, SSO, Authentication Flow , client credentials flow ,on-behalf-of Flow,Implicit Flow, MSAL,Autherization Code Flow,..."
   },
   
   {
