@@ -86,7 +86,7 @@ steps:
   displayName: '[Git] Creating commit'
 
 - script: |
-    git push origin main;
+    git push origin master;
   workingDirectory: $(Build.StagingDirectory)
   displayName: '[Git] Push changes to remote'
 
