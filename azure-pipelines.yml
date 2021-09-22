@@ -51,9 +51,9 @@ steps:
   workingDirectory: $(Build.StagingDirectory)
   displayName: '[Script] Copy file from development branch to /tmp/source'
 
-- script: 'git checkout master'
+- script: 'git checkout main'
   workingDirectory: $(Build.StagingDirectory)
-  displayName: '[Git] Switch to master branch for $(Build.StagingDirectory)'
+  displayName: '[Git] Switch to main branch for $(Build.StagingDirectory)'
 
 - script: 'gem install bundler'
   workingDirectory: /tmp/source
@@ -86,7 +86,7 @@ steps:
   displayName: '[Git] Creating commit'
 
 - script: |
-    git push origin master;
+    git push origin main;
   workingDirectory: $(Build.StagingDirectory)
   displayName: '[Git] Push changes to remote'
 
