@@ -5,7 +5,7 @@ trigger:
 - development
 
 pool:
-  vmImage: 'Ubuntu-16.04'
+  vmImage: 'Ubuntu-latest'
 
 # Note: github_pat should be configured as an environment variable in devops
 #   -> create github pat here: https://github.com/settings/tokens
