@@ -18,3 +18,7 @@ jobs:
         docker run \
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
         jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
+    
+    - uses: s${{ github.workspace }}/git-auto-commit-action@v4
+      with:
+        commit_message: Apply Blog post changes
