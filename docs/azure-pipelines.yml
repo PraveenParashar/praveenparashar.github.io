@@ -1,0 +1,111 @@
+name: $(Build.BuildId)
+
+# Trigger on push to development
+trigger:
+- development
+
+pool:
+  vmImage: 'Ubuntu-latest'
+
+# Note: github_pat should be configured as an environment variable in devops
+#   -> create github pat here: https://github.com/settings/tokens
+#   -> Create environment variable in dev.azure.com under pipelines -> edit (right top) -> variables (right top triple dots) -> called github_pat -> click the lock
+variables:
+  gh_user: praveenparashar
+  gh_repo: praveenparashar.github.io
+  gh_pass: $(github_pat)
+  gh_email: praveen.parashar.2007@gmail.com
+  gh_auth_header: $(echo -n "${gh_user}:$(github_pat)" | base64);
+
+steps:
+# https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azdevops&tabs=schema#checkout
+- checkout: none # we are not going to sync sources, we will manually clone
+  persistCredentials: false # We disallow setting the persisting, since we want to have a verified push which requires a PAT token
+
+# 1. Setup our local repository and branch that we can work on
+- script: git clone https://$(github_pat)@github.com/$(gh_user)/$(gh_repo).git .
+  workingDirectory: $(Build.StagingDirectory)
+  displayName: "[Git] Clone GitHub Pages Repository"
+
+- script: |
+    git config user.email $(gh_email)
+    git config user.name $(gh_user)
+  workingDirectory: $(Build.StagingDirectory)
+  displayName: '[Git] Configure User'
+
+# 2. Configure Ruby
+- task: UseRubyVersion@0 # See: https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/tool/use-ruby-version?view=azdevops
+  displayName: '[Ruby] Use Ruby >= 2.5'
+
+# 3. Build Site - We only want a HTML diff on master, so we follow this process
+#      1. Copy files from development branch to /tmp/source
+#      2. Build Jekyll on /tmp/source to /tmp/build
+#      3. Remove all files in $(Build.StagingDirectory) except .git/
+#      4. Copy everything from /tmp/build to $(Build.StagingDirectory)/
+#      5. Create the commit and push it
+- script: 'git checkout development'
+  workingDirectory: $(Build.StagingDirectory)
+  displayName: '[Git] Switch to development branch for $(Build.StagingDirectory)'
+
+- script: 'mkdir /tmp/source; cp -R * /tmp/source; rm -rf /tmp/source/.git'
+  workingDirectory: $(Build.StagingDirectory)
+  displayName: '[Script] Copy file from development branch to /tmp/source'
+
+- script: 'git checkout main'
+  workingDirectory: $(Build.StagingDirectory)
+  displayName: '[Git] Switch to main branch for $(Build.StagingDirectory)'
+
+- script: 'gem install bundler'
+  workingDirectory: /tmp/source
+  displayName: '[Jekyll] Install Bundler'
+
+- script: |
+    ls -la;
+    bundle install
+  workingDirectory: /tmp/source
+  displayName: '[Jekyll] Install Jekyll and Dependencies'
+
+- script: |
+    mkdir /tmp/build;
+    bundle exec jekyll build -d /tmp/build;
+  workingDirectory: /tmp/source
+  displayName: '[Jekyll] Build Jekyll Static Site from /tmp/source to /tmp/build'
+
+- script: |
+    cp -R $(Build.StagingDirectory)/.git /tmp/build;
+    rm -rf $(Build.StagingDirectory)/*;
+    cp -R /tmp/build/* $(Build.StagingDirectory);
+  workingDirectory: /tmp/build
+  displayName: '[Script] Remove all files in $(Build.StagingDirectory) except .git/ and add files from /tmp/build'
+
+# 3. Create our commit, merge into master, delete draft branch and push it
+- script: |
+    git add --all;
+    git commit -m"Pipelines-Bot: Updated site via $(Build.SourceVersion)";
+  workingDirectory: $(Build.StagingDirectory)
+  displayName: '[Git] Creating commit'
+
+- script: |
+    git push origin master;
+  workingDirectory: $(Build.StagingDirectory)
+  displayName: '[Git] Push changes to remote'
+
+# 4. Get GitHub Pages build status
+# - script: |
+#     gh_user="praveenparashar";
+#     gh_pass=$(github_pat);
+#     gh_repo="praveenparashar.github.io";
+#     auth_pass=$(echo -n "${gh_user}:$(github_pat)" | base64);
+
+#     curl https://api.github.com/repos/${gh_user}/${gh_repo}/pages/builds -i -v \
+#     -X POST \
+#     -H "Accept: application/vnd.github.mister-fantastic-preview+json" \
+#     -H "Authorization: Basic ${auth_pass}"
+#   displayName: '[GitHub] Trigger Page Build'
+
+- script: |
+    curl https://api.github.com/repos/$(gh_user)/$(gh_repo)/pages/builds/latest -i -v \
+    -X GET \
+    -H "Accept: application/vnd.github.mister-fantastic-preview+json" \
+    -H "Authorization: Basic $(gh_auth_header)"
+  displayName: '[GitHub] Get Page Build Status'
