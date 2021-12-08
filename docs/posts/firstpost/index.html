@@ -2,6 +2,10 @@
 
 
 
+
+
+
+
 <html lang="en" 
   
 >
@@ -16,6 +20,12 @@
 
   
 
+    <!-- i18n for `_javascript/utils/timeago.js` -->
+    <meta name="day-prompt" content="days ago">
+    <meta name="hour-prompt" content="hours ago">
+    <meta name="minute-prompt" content="minutes ago">
+    <meta name="justnow-prompt" content="just now">
+
     
 
     
@@ -23,7 +33,7 @@
   
 
   <!-- Begin Jekyll SEO tag v2.7.1 -->
-<meta name="generator" content="Jekyll v4.2.0" />
+<meta name="generator" content="Jekyll v4.2.1" />
 <meta property="og:title" content="The Basic Template" />
 <meta name="author" content="Praveen Parashar" />
 <meta property="og:locale" content="en" />
@@ -40,7 +50,7 @@
 <meta name="twitter:creator" content="@Praveen Parashar" />
 <meta name="google-site-verification" content="google_meta_tag_verification" />
 <script type="application/ld+json">
-{"dateModified":"2021-08-16T09:01:02+05:30","datePublished":"2021-08-10T11:45:20+05:30","mainEntityOfPage":{"@type":"WebPage","@id":"https://praveenparashar.github.io/posts/firstpost/"},"author":{"@type":"Person","name":"Praveen Parashar"},"@type":"BlogPosting","description":"The Template for POST","url":"https://praveenparashar.github.io/posts/firstpost/","headline":"The Basic Template","@context":"https://schema.org"}</script>
+{"headline":"The Basic Template","dateModified":"2021-08-16T09:01:02+05:30","datePublished":"2021-08-10T11:45:20+05:30","author":{"@type":"Person","name":"Praveen Parashar"},"url":"https://praveenparashar.github.io/posts/firstpost/","@type":"BlogPosting","description":"The Template for POST","mainEntityOfPage":{"@type":"WebPage","@id":"https://praveenparashar.github.io/posts/firstpost/"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -100,36 +110,9 @@
 
 
 
-  <!-- JavaScripts -->
+  <!-- JavaScript -->
 
   <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
-
-  <script defer
-    src="https://cdn.jsdelivr.net/combine/npm/popper.js@1.15.0,npm/bootstrap@4/dist/js/bootstrap.min.js"></script>
-
-  <!--
-  JS selector for site.
--->
-
-
-  
-
-
-
-  <!-- image lazy-loading & popup -->
-  <script async
-    src="https://cdn.jsdelivr.net/combine/npm/lozad/dist/lozad.min.js,npm/magnific-popup@1/dist/jquery.magnific-popup.min.js"></script>
-
-
-
-
-
-<script defer src="/assets/js/dist/post.min.js"></script>
-
-
-
-
-
 
 </head>
 
@@ -140,25 +123,26 @@
   The Side Bar
 -->
 
-<div id="sidebar" class="d-flex flex-column align-items-end">
-
+<div id="sidebar" class="d-flex flex-column align-items-end" lang="en">
   <div class="profile-wrapper text-center">
     <div id="avatar">
       <a href="/" alt="avatar" class="mx-auto">
         
-        <img src="https://learning2code.in/assets/avatar.jpeg" alt="avatar" onerror="this.style.display='none'">
+          
+          <img src="https://learning2code.in/assets/avatar.jpeg" alt="avatar" onerror="this.style.display='none'">
+        
       </a>
     </div>
 
     <div class="site-title mt-3">
       <a href="/">Praveen's Blogs</a>
     </div>
-
     <div class="site-subtitle font-italic">Learn By doing</div>
 
   </div><!-- .profile-wrapper -->
 
   <ul class="w-100">
+
     <!-- home -->
     <li class="nav-item">
       <a href="/" class="nav-link">
@@ -171,6 +155,8 @@
     <li class="nav-item">
       <a href="/categories/" class="nav-link">
         <i class="fa-fw fas fa-stream ml-xl-3 mr-xl-3 unloaded"></i>
+        
+
         <span>CATEGORIES</span>
       </a>
     </li> <!-- .nav-item -->
@@ -178,6 +164,8 @@
     <li class="nav-item">
       <a href="/tags/" class="nav-link">
         <i class="fa-fw fas fa-tags ml-xl-3 mr-xl-3 unloaded"></i>
+        
+
         <span>TAGS</span>
       </a>
     </li> <!-- .nav-item -->
@@ -185,6 +173,8 @@
     <li class="nav-item">
       <a href="/archives/" class="nav-link">
         <i class="fa-fw fas fa-archive ml-xl-3 mr-xl-3 unloaded"></i>
+        
+
         <span>ARCHIVES</span>
       </a>
     </li> <!-- .nav-item -->
@@ -192,6 +182,8 @@
     <li class="nav-item">
       <a href="/about/" class="nav-link">
         <i class="fa-fw fas fa-info ml-xl-3 mr-xl-3 unloaded"></i>
+        
+
         <span>ABOUT</span>
       </a>
     </li> <!-- .nav-item -->
@@ -199,7 +191,7 @@
 
   </ul> <!-- ul.nav.flex-column -->
 
-  <div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center">
+  <div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center">
 
     
       
@@ -423,27 +415,25 @@
       
 
         
-          
+          <span>
+            <a href="/">
+              Home
+            </a>
+          </span>
 
         
 
       
 
         
-        <span>
-          
-          
-          <a href="/">
-            Posts
-          </a>
-        </span>
-
-        
 
       
 
         
-          <span>The Basic Template</span>
+
+          
+            <span>The Basic Template</span>
+          
 
         
 
@@ -487,6 +477,7 @@
 -->
 
 
+
 <!--
   Fixed kramdown code highlight rendering:
   https://github.com/penibelst/jekyll-compress-html/issues/101
@@ -494,12 +485,23 @@
 -->
 
 
+
 <!-- Add attribute 'hide-bullet' to the checkbox list -->
 
 
 
 
+<!-- images -->
+
+
+
+<!-- Add header for code snippets -->
+
+
+
+
 <!-- return -->
+
 <div class="row">
 
   <div id="post-wrapper" class="col-12 col-lg-11 col-xl-8">
@@ -520,25 +522,13 @@
 
 
 
+
 <span class="timeago "
   
     data-toggle="tooltip"
     data-placement="bottom"
-    title="Tue, Aug 10, 2021, 11:45 AM +0530"
-  
-
-  
-   >
-
-  
-  
-
-  
-    Aug 10
-  
-
-  <i class="unloaded">2021-08-10T11:45:20+05:30</i>
-
+    title="2021-08-10 11:45:20 +0530"
+  >2021-08-10 11:45:20 +0530<i class="unloaded">2021-08-10T11:45:20+05:30</i>
 </span>
 
           by
@@ -561,25 +551,15 @@
 
 
 
+
 <span class="timeago lastmod"
   
     data-toggle="tooltip"
     data-placement="bottom"
-    title="Mon, Aug 16, 2021,  9:01 AM +0530"
-  
-
-  
-   >
-
-  
-  
-
-  
-    Aug 16
-  
-
-  <i class="unloaded">2021-08-16T09:01:02+05:30</i>
-
+    title="2021-08-16 09:01:02 +0530
+"
+  >2021-08-16 09:01:02 +0530
+<i class="unloaded">2021-08-16T09:01:02+05:30</i>
 </span>
 
           </span>
@@ -612,7 +592,16 @@
 
         <blockquote>
   <p>Create basic template with .md markdown</p>
-  <div class="language-markdown highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+  <div class="language-markdown highlighter-rouge"><div class="code-header">
+        <span text-data="
+
+
+
+
+    Markdown
+
+"><i class="fa-fw fas fa-code small"></i></span>
+      <button aria-label="copy" title-succeed=""><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -632,7 +621,16 @@
 </blockquote>
 
 <p>For taks List</p>
-<div class="language-markdown highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+<div class="language-markdown highlighter-rouge"><div class="code-header">
+        <span text-data="
+
+
+
+
+    Markdown
+
+"><i class="fa-fw fas fa-code small"></i></span>
+      <button aria-label="copy" title-succeed=""><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -642,11 +640,29 @@
 
 </pre></td></tr></tbody></table></code></div></div>
 <p>For CODE BLOCK</p>
-<div class="language-markdown highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+<div class="language-markdown highlighter-rouge"><div class="code-header">
+        <span text-data="
+
+
+
+
+    Markdown
+
+"><i class="fa-fw fas fa-code small"></i></span>
+      <button aria-label="copy" title-succeed=""><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre>code here
 </pre></td></tr></tbody></table></code></div></div>
 
-<div class="language-markdown highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+<div class="language-markdown highlighter-rouge"><div class="code-header">
+        <span text-data="
+
+
+
+
+    Markdown
+
+"><i class="fa-fw fas fa-code small"></i></span>
+      <button aria-label="copy" title-succeed=""><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -776,7 +792,7 @@ jekyll build -d ./docs</p>
 -->
 
 <div class="share-wrapper">
-  <span class="share-label text-muted mr-1">Share</span>
+  <span class="share-label text-muted mr-1"></span>
   <span class="share-icons">
     
     
@@ -801,8 +817,11 @@ jekyll build -d ./docs</p>
         </a>
     
 
-    <i class="fa-fw fas fa-link small" onclick="copyLink()"
-        data-toggle="tooltip" data-placement="top" title="Copy link"></i>
+    <i id="copy-link" class="fa-fw fas fa-link small"
+        data-toggle="tooltip" data-placement="top"
+        title=""
+        title-succeed="">
+    </i>
 
   </span>
 </div>
@@ -824,6 +843,10 @@ jekyll build -d ./docs</p>
   <!--
   The Pannel on right side (Desktop views)
 -->
+
+
+
+
 
 <div id="panel-wrapper" class="col-xl-3 pl-2 text-muted topbar-down">
 
@@ -850,6 +873,11 @@ jekyll build -d ./docs</p>
       <span>Recent Update</span>
       <ul class="post-content pl-0 pb-1 ml-1 mt-2">
 
+      
+        
+        
+        
+        <li><a href="/posts/Authentication-must-know-lexicon/">Authentication Must know lexicon</a></li>
       
         
         
@@ -913,6 +941,55 @@ jekyll build -d ./docs</p>
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -1016,61 +1093,6 @@ jekyll build -d ./docs</p>
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -1128,8 +1150,6 @@ jekyll build -d ./docs</p>
     
     
     
-    
-      
     
   
     
@@ -1196,7 +1216,77 @@ jekyll build -d ./docs</p>
     
     
     
+  
+    
+    
+    
+    
       
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -1216,6 +1306,8 @@ jekyll build -d ./docs</p>
     
     
     
+    
+      
     
   
     
@@ -1246,34 +1338,6 @@ jekyll build -d ./docs</p>
     
     
       
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
     
   
     
@@ -1293,6 +1357,9 @@ jekyll build -d ./docs</p>
 
       
         
+        <a class="post-tag" href="/tags/howto/">HowTo</a>
+      
+        
         <a class="post-tag" href="/tags/azure/">Azure</a>
       
         
@@ -1302,25 +1369,22 @@ jekyll build -d ./docs</p>
         <a class="post-tag" href="/tags/authentication/">Authentication</a>
       
         
-        <a class="post-tag" href="/tags/howto/">HowTo</a>
+        <a class="post-tag" href="/tags/interview/">interview</a>
       
         
         <a class="post-tag" href="/tags/interview/">Interview</a>
       
         
-        <a class="post-tag" href="/tags/interview/">interview</a>
+        <a class="post-tag" href="/tags/jkeyll/">Jkeyll</a>
       
         
         <a class="post-tag" href="/tags/must-know/">Must-Know</a>
       
         
-        <a class="post-tag" href="/tags/netcore/">.netcore</a>
-      
-        
         <a class="post-tag" href="/tags/netcore/">.netCore</a>
       
         
-        <a class="post-tag" href="/tags/auth2-0/">Auth2.0</a>
+        <a class="post-tag" href="/tags/netcore/">.netcore</a>
       
 
       </div>
@@ -1440,6 +1504,32 @@ jekyll build -d ./docs</p>
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
     
 
 
@@ -1473,21 +1563,9 @@ jekyll build -d ./docs</p>
 
 
 
+
 <span class="timeago small"
-  
-
-  
-   >
-
-  
-  
-
-  
-    Aug 10
-  
-
-  <i class="unloaded">2021-08-10T12:01:20+05:30</i>
-
+  >Aug 10<i class="unloaded">2021-08-10T12:01:20+05:30</i>
 </span>
 
             <h3 class="pt-0 mt-1 mb-3" data-toc-skip>How to add post with tag, category</h3>
@@ -1511,7 +1589,7 @@ https://jekyllrb.com/docs/posts/
       
       
       <div class="card">
-        <a href="/posts/Authentication-must-know-lexicon/">
+        <a href="/posts/jow-to-Azurepipeline/">
           <div class="card-body">
             <!--
   Date format snippet
@@ -1522,24 +1600,12 @@ https://jekyllrb.com/docs/posts/
 
 
 
+
 <span class="timeago small"
-  
-
-  
-   >
-
-  
-  
-
-  
-    Sep 10
-  
-
-  <i class="unloaded">2021-09-10T09:25:20+05:30</i>
-
+  >Sep 23<i class="unloaded">2021-09-23T01:05:20+05:30</i>
 </span>
 
-            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Authentication Must know lexicon</h3>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Azure pipeline for Blog site</h3>
             <div class="text-muted small">
               <p>
                 
@@ -1548,10 +1614,8 @@ https://jekyllrb.com/docs/posts/
 
 
 
-                Azure Active Directory ,LDAP,OAuth2.0, IdToken,
-ODIC,OpenAPI ,Header, JWT, OpenID Connect, bearer Tokens,
-Access Token , Client App , client ID, Refresh tokens, Protocols,
-Daemons ,SPA, SSO, Authen...
+                
+
               </p>
             </div>
           </div>
@@ -1561,7 +1625,7 @@ Daemons ,SPA, SSO, Authen...
       
       
       <div class="card">
-        <a href="/posts/internals-of-builtin-ioc-container-in-aspnet-core/">
+        <a href="/posts/How-To-Setup-Jeklly-Blog-Mac/">
           <div class="card-body">
             <!--
   Date format snippet
@@ -1572,24 +1636,12 @@ Daemons ,SPA, SSO, Authen...
 
 
 
+
 <span class="timeago small"
-  
-
-  
-   >
-
-  
-  
-
-  
-    Sep 11
-  
-
-  <i class="unloaded">2021-09-11T08:55:20+05:30</i>
-
+  >Dec  8<i class="unloaded">2021-12-08T13:45:20+05:30</i>
 </span>
 
-            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>internals-of-builtin-ioc-container-in-aspnet-core</h3>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>How to setup Blog in Mac</h3>
             <div class="text-muted small">
               <p>
                 
@@ -1598,9 +1650,14 @@ Daemons ,SPA, SSO, Authen...
 
 
 
-                ASP.NET Core: Built-in IoC Container
+                Jeklly documentation and Commands
 
-ASP.NET Core framework includes built-in IoC container for automatic dependency injection. The built-in IoC container is a simple yet effective container. Let’...
+https://jekyllrb.com/docs/
+
+Install Ruby with Homebrew
+https://mac.install.guide/ruby/13.html
+
+
               </p>
             </div>
           </div>
@@ -1732,6 +1789,55 @@ ASP.NET Core framework includes built-in IoC container for automatic dependency 
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -1835,61 +1941,6 @@ ASP.NET Core framework includes built-in IoC container for automatic dependency 
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -1947,8 +1998,6 @@ ASP.NET Core framework includes built-in IoC container for automatic dependency 
     
     
     
-    
-      
     
   
     
@@ -2015,7 +2064,77 @@ ASP.NET Core framework includes built-in IoC container for automatic dependency 
     
     
     
+  
+    
+    
+    
+    
       
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -2035,6 +2154,8 @@ ASP.NET Core framework includes built-in IoC container for automatic dependency 
     
     
     
+    
+      
     
   
     
@@ -2075,36 +2196,11 @@ ASP.NET Core framework includes built-in IoC container for automatic dependency 
         
         
 
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
+
+
       
         
-        
-
-
-
+        <a class="post-tag" href="/tags/howto/">HowTo</a>
       
         
         <a class="post-tag" href="/tags/azure/">Azure</a>
@@ -2116,25 +2212,22 @@ ASP.NET Core framework includes built-in IoC container for automatic dependency 
         <a class="post-tag" href="/tags/authentication/">Authentication</a>
       
         
-        <a class="post-tag" href="/tags/howto/">HowTo</a>
+        <a class="post-tag" href="/tags/interview/">interview</a>
       
         
         <a class="post-tag" href="/tags/interview/">Interview</a>
       
         
-        <a class="post-tag" href="/tags/interview/">interview</a>
+        <a class="post-tag" href="/tags/jkeyll/">Jkeyll</a>
       
         
         <a class="post-tag" href="/tags/must-know/">Must Know</a>
       
         
-        <a class="post-tag" href="/tags/netcore/">.netcore</a>
-      
-        
         <a class="post-tag" href="/tags/netcore/">.netCore</a>
       
         
-        <a class="post-tag" href="/tags/auth2-0/">Auth2.0</a>
+        <a class="post-tag" href="/tags/netcore/">.netcore</a>
       
 
     </div>
@@ -2162,15 +2255,15 @@ ASP.NET Core framework includes built-in IoC container for automatic dependency 
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.7.3/dest/simple-jekyll-search.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js"></script>
 
 <script>
 SimpleJekyllSearch({
   searchInput: document.getElementById('search-input'),
   resultsContainer: document.getElementById('search-results'),
   json: '/assets/js/data/search.json',
-  searchResultTemplate: '<div class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-lg-4 pr-lg-4 pl-xl-0 pr-xl-0">  <a href="https://praveenparashar.github.io{url}">{title}</a>  <div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1">    {categories}    {tags}  </div>  <p>{snippet}</p></div>',
-  noResultsText: '<p class="mt-5">Oops! No result founds.</p>',
+  searchResultTemplate: '<div class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-lg-4 pr-lg-4 pl-xl-0 pr-xl-0">  <a href="{url}">{title}</a>  <div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1">    {categories}    {tags}  </div>  <p>{snippet}</p></div>',
+  noResultsText: '<p class="mt-5"></p>',
   templateMiddleware: function(prop, value, template) {
     if (prop === 'categories') {
       if (value === '') {
@@ -2190,6 +2283,35 @@ SimpleJekyllSearch({
   }
 });
 </script>
+
+
+    <!--
+  JS selector for site.
+-->
+
+<!-- layout specified -->
+
+
+  
+
+
+
+  <!-- image lazy-loading & popup -->
+  <script src="https://cdn.jsdelivr.net/combine/npm/lozad/dist/lozad.min.js,npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/clipboard@2/dist/clipboard.min.js"></script>
+
+
+
+
+
+<script defer src="/assets/js/dist/post.min.js"></script>
+
+
+
+<!-- commons -->
+
+<script src="https://cdn.jsdelivr.net/combine/npm/popper.js@1.16.1,npm/bootstrap@4/dist/js/bootstrap.min.js"></script>
+
+
 
 
   </body>

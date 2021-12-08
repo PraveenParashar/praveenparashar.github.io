@@ -45,7 +45,7 @@ const resource = [
 const allowedDomains = [
   
 
-  'localhost:4000',
+  'praveenparashar.github.io',
 
   'fonts.gstatic.com',
   'fonts.googleapis.com',
