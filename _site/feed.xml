@@ -1,18 +1,18 @@
 
 
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <id>https://praveenparashar.github.io/</id>
+  <id>http://localhost:4000/</id>
   <title>Praveen's Blogs</title>
   <subtitle>Let's do it ,Learn By doing. PraveenParasharBlogs</subtitle>
-  <updated>2021-09-11T09:55:14+05:30</updated>
+  <updated>2021-12-08T13:54:22+05:30</updated>
   <author>
     <name>Praveen Parashar</name>
-    <uri>https://praveenparashar.github.io/</uri>
+    <uri>http://localhost:4000/</uri>
   </author>
-  <link rel="self" type="application/atom+xml" href="https://praveenparashar.github.io/feed.xml"/>
+  <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en"
-    href="https://praveenparashar.github.io/"/>
-  <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
+    href="http://localhost:4000/"/>
+  <generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator>
   <rights> © 2021 Praveen Parashar </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
@@ -20,14 +20,90 @@
 
   
   <entry>
+    <title>How to setup Blog in Mac</title>
+    <link href="http://localhost:4000/posts/How-To-Setup-Jeklly-Blog-Mac/" rel="alternate" type="text/html" title="How to setup Blog in Mac" />
+    <published>2021-12-08T13:45:20+05:30</published>
+  
+    <updated>2021-12-08T13:45:20+05:30</updated>
+  
+    <id>http://localhost:4000/posts/How-To-Setup-Jeklly-Blog-Mac/</id>
+    <content src="http://localhost:4000/posts/How-To-Setup-Jeklly-Blog-Mac/" />
+    <author>
+      <name>Praveen Parashar</name>
+    </author>
+
+  
+    
+    <category term="Miscellaneous" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Jeklly documentation and Commands
+
+https://jekyllrb.com/docs/
+
+Install Ruby with Homebrew
+https://mac.install.guide/ruby/13.html
+
+
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Azure pipeline for Blog site</title>
+    <link href="http://localhost:4000/posts/jow-to-Azurepipeline/" rel="alternate" type="text/html" title="Azure pipeline for Blog site" />
+    <published>2021-09-23T01:05:20+05:30</published>
+  
+    <updated>2021-09-23T01:05:20+05:30</updated>
+  
+    <id>http://localhost:4000/posts/jow-to-Azurepipeline/</id>
+    <content src="http://localhost:4000/posts/jow-to-Azurepipeline/" />
+    <author>
+      <name>Praveen Parashar</name>
+    </author>
+
+  
+    
+    <category term="Miscellaneous" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
     <title>internals-of-builtin-ioc-container-in-aspnet-core</title>
-    <link href="https://praveenparashar.github.io/posts/internals-of-builtin-ioc-container-in-aspnet-core/" rel="alternate" type="text/html" title="internals-of-builtin-ioc-container-in-aspnet-core" />
+    <link href="http://localhost:4000/posts/internals-of-builtin-ioc-container-in-aspnet-core/" rel="alternate" type="text/html" title="internals-of-builtin-ioc-container-in-aspnet-core" />
     <published>2021-09-11T08:55:20+05:30</published>
   
     <updated>2021-09-11T08:55:20+05:30</updated>
   
-    <id>https://praveenparashar.github.io/posts/internals-of-builtin-ioc-container-in-aspnet-core/</id>
-    <content src="https://praveenparashar.github.io/posts/internals-of-builtin-ioc-container-in-aspnet-core/" />
+    <id>http://localhost:4000/posts/internals-of-builtin-ioc-container-in-aspnet-core/</id>
+    <content src="http://localhost:4000/posts/internals-of-builtin-ioc-container-in-aspnet-core/" />
     <author>
       <name>Praveen Parashar</name>
     </author>
@@ -65,13 +141,13 @@ Classes...
   
   <entry>
     <title>Authentication Must know lexicon</title>
-    <link href="https://praveenparashar.github.io/posts/Authentication-must-know-lexicon/" rel="alternate" type="text/html" title="Authentication Must know lexicon" />
+    <link href="http://localhost:4000/posts/Authentication-must-know-lexicon/" rel="alternate" type="text/html" title="Authentication Must know lexicon" />
     <published>2021-09-10T09:25:20+05:30</published>
   
     <updated>2021-09-11T09:51:55+05:30</updated>
   
-    <id>https://praveenparashar.github.io/posts/Authentication-must-know-lexicon/</id>
-    <content src="https://praveenparashar.github.io/posts/Authentication-must-know-lexicon/" />
+    <id>http://localhost:4000/posts/Authentication-must-know-lexicon/</id>
+    <content src="http://localhost:4000/posts/Authentication-must-know-lexicon/" />
     <author>
       <name>Praveen Parashar</name>
     </author>
@@ -104,13 +180,13 @@ Permissions,consent ,Scopes and permissions,Permission types,Consent types, clai
   
   <entry>
     <title>Azure Active Directory integrations with authentication</title>
-    <link href="https://praveenparashar.github.io/posts/AzureAD-Authemtication-Provisioning-Protocol/" rel="alternate" type="text/html" title="Azure Active Directory integrations with authentication" />
+    <link href="http://localhost:4000/posts/AzureAD-Authemtication-Provisioning-Protocol/" rel="alternate" type="text/html" title="Azure Active Directory integrations with authentication" />
     <published>2021-08-30T12:36:20+05:30</published>
   
     <updated>2021-08-30T12:36:20+05:30</updated>
   
-    <id>https://praveenparashar.github.io/posts/AzureAD-Authemtication-Provisioning-Protocol/</id>
-    <content src="https://praveenparashar.github.io/posts/AzureAD-Authemtication-Provisioning-Protocol/" />
+    <id>http://localhost:4000/posts/AzureAD-Authemtication-Provisioning-Protocol/</id>
+    <content src="http://localhost:4000/posts/AzureAD-Authemtication-Provisioning-Protocol/" />
     <author>
       <name>Praveen Parashar</name>
     </author>
@@ -136,89 +212,6 @@ Permissions,consent ,Scopes and permissions,Permission types,Consent types, clai
 OAuth 2.0 authentication with Azure Active Directory
 
 he OAuth 2.0 is the industry protocol for authorization. It allows a user to grant limited access to its protected resources. Designed to work specifically with Hypertext Transfer Protocol (HTTP), OAuth s...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Creating classes using interfaces with default interface methods</title>
-    <link href="https://praveenparashar.github.io/posts/interfaces-with-default-interface-methods/" rel="alternate" type="text/html" title="Creating classes using interfaces with default interface methods" />
-    <published>2021-08-16T08:36:20+05:30</published>
-  
-    <updated>2021-08-16T08:36:20+05:30</updated>
-  
-    <id>https://praveenparashar.github.io/posts/interfaces-with-default-interface-methods/</id>
-    <content src="https://praveenparashar.github.io/posts/interfaces-with-default-interface-methods/" />
-    <author>
-      <name>Praveen Parashar</name>
-    </author>
-
-  
-    
-    <category term="C#" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      In C# 8.0  you can define an implementation when you declare a member of an interface. This feature provides new capabilities where you can define default implementations for features declared in interfaces. Classes can pick when to override functionality, when to use the default functionality, and when not to declare support for discrete features.
-
-Create interfaces with implementations that d...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>How to add JWT authorization + Swagger configured + ASP.NET Core 3.1 API with AzureAD</title>
-    <link href="https://praveenparashar.github.io/posts/jwt-auth-dotnetcore/" rel="alternate" type="text/html" title="How to add JWT authorization + Swagger configured + ASP.NET Core 3.1 API with AzureAD" />
-    <published>2021-08-10T19:56:20+05:30</published>
-  
-    <updated>2021-08-10T19:56:20+05:30</updated>
-  
-    <id>https://praveenparashar.github.io/posts/jwt-auth-dotnetcore/</id>
-    <content src="https://praveenparashar.github.io/posts/jwt-auth-dotnetcore/" />
-    <author>
-      <name>Praveen Parashar</name>
-    </author>
-
-  
-    
-    <category term="Azure" />
-    
-    <category term="dotnetcore" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Add Open API Documentation(Swagger)
-Add Authentication Azure AD Oauth2.0 
-Authorize Swagger UI to access API
-
-how to add JWT authorization  in Swagger configured  in ASP.NET Core 3.1 with AzureAD
-knowledge level  required: intermediate  for beginner video is coming soon…video for each step
-
-Step1: Add swagger documentation
-
-Step2: AzureAD application Registration - API
-
-Step3: configure API Sec...
     </summary>
   
 
