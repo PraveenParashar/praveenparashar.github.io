@@ -27,7 +27,7 @@ jobs:
       -
         name: Deploy to GitHub Pages
         if: success()
-        uses: PraveenParashar/praveenparashar.github.io@v2
+        uses: PraveenParashar/praveenparashar.github.io
         with:
           target_branch: gh-pages
           build_dir: public
