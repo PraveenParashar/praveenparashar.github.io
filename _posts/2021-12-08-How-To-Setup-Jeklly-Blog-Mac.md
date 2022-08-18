@@ -13,7 +13,9 @@ https://jekyllrb.com/docs/
 ## Install Ruby with Homebrew
 <a href = "https://mac.install.guide/ruby/13.html" >https://mac.install.guide/ruby/13.html</a>
 
-### Useful Cmds
+## Useful Cmds
 <a href="https://docs.w3cub.com/jekyll/usage/index"> https://docs.w3cub.com/jekyll/usage/index</a>
+
+
 
 
