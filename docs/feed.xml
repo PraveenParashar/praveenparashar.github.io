@@ -4,7 +4,7 @@
   <id>https://praveenparashar.github.io/</id>
   <title>Praveen's Blogs</title>
   <subtitle>Let's do it ,Learn By doing. PraveenParasharBlogs</subtitle>
-  <updated>2021-12-08T14:36:23+05:30</updated>
+  <updated>2022-09-11T09:35:46+05:30</updated>
   <author>
     <name>Praveen Parashar</name>
     <uri>https://praveenparashar.github.io/</uri>
@@ -13,7 +13,7 @@
   <link rel="alternate" type="text/html" hreflang="en"
     href="https://praveenparashar.github.io/"/>
   <generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator>
-  <rights> © 2021 Praveen Parashar </rights>
+  <rights> © 2022 Praveen Parashar </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
@@ -53,6 +53,8 @@ https://jekyllrb.com/docs/
 Install Ruby with Homebrew
 https://mac.install.guide/ruby/13.html
 
+build in different folder 
+bundle exec jekyll build –destination \docs
 
     </summary>
   

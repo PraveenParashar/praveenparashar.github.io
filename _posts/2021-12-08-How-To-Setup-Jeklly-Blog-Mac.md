@@ -14,3 +14,5 @@ https://jekyllrb.com/docs/
 <a href = "https://mac.install.guide/ruby/13.html" >https://mac.install.guide/ruby/13.html</a>
 
 
+build in different folder 
+bundle exec jekyll build --destination \docs

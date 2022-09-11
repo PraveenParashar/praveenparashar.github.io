@@ -12,7 +12,7 @@
 
 
 
-    "snippet": "Jeklly documentation and Commandshttps://jekyllrb.com/docs/Install Ruby with Homebrewhttps://mac.install.guide/ruby/13.html"
+    "snippet": "Jeklly documentation and Commandshttps://jekyllrb.com/docs/Install Ruby with Homebrewhttps://mac.install.guide/ruby/13.htmlbuild in different folder bundle exec jekyll build –destination \\docs"
   },
   
   {
